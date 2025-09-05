@@ -46,10 +46,11 @@ nav a:hover{
 }
 
 main {
-    margin: 0 5%;
+    margin: 0 auto;
     text-align: center;
     display: grid;
     grid-template-columns: auto auto;
+    max-width: 80%;
 }
 
 h1 {
