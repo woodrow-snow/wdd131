@@ -1,0 +1,35 @@
+:root {
+    --body-font: "Roboto", "Sans-serif"; 
+    --background-color: #b1ddf1;
+    --border-color: rgba(5, 5, 23, 0.5);
+    --section-back-color: rgb(255, 255, 255);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--body-font);
+}
+
+header, main, footer {
+    max-width: 640px;
+    margin: 1rem auto;
+    border: 1px var(--border-color) solid;
+    padding: 1rem;
+    background-color: var(--background-color);
+}
+
+main {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 1rem;
+}
+
+section {
+    padding: 1rem;
+    background-color: var(--section-back-color);
+}
