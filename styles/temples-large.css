@@ -1,0 +1,44 @@
+@media screen and (min-width: 500px){
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    nav {
+        justify-self: flex-end;
+        padding-right: 1rem;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 2rem;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    h1 {
+        grid-column: 1/4;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .navigation li {
+        display: block;
+    }
+
+    .navigation a:hover {
+        color: var(--body-font-color);
+    }
+}
