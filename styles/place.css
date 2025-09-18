@@ -1,0 +1,33 @@
+:root {
+    /* colors */
+    --primary-color: #FEECB3;
+    --seconday-color: #5F5F23; 
+    --accent1: #7E4502;
+    --accent2: #DDB87E;
+
+    /* fonts */
+    --heading-font: "Rye", "Rockwell", "Clarendon", serif;
+    --body-font: "Scope One", Georgia, "Book Antiqua", serif;
+}
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    width: 100%;
+}
+
+h1 {
+    font-family: var(--heading-font);
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--accent2);
+    border-bottom: 1rem solid var(--accent1);
+}
+
+/* do last */
+@media screen and (min-width: 500px){}
