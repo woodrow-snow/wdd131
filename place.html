@@ -24,54 +24,59 @@
         <h1>Vernal, Utah</h1>
     </header>
     <main>
-        <picture class="hero">
-            <source media="(min-width: 500px)" srcset="images/location-hero-large.webp">
-            <img src="images/location-hero-small.webp" alt="Vernal, Utah">
-        </picture>
-        <section id="data">
-            <h2>Data</h2>
-            <div class="title-info">
-                <ul class="title">
-                    <li>Area:</li>
-                    <li>Population:</li>
-                    <li>Languages:</li>
-                    <li>Currency:</li>
-                    <li>Time Zone:</li>
-                    <li>Calling Code:</li>
-                    <li>Area Code:</li>
-                </ul>
-                <ul class="informaiton">
-                    <li>4.62 sq mi</li>
-                    <li>10,698 as of 2024</li>
-                    <li>English, Spanish</li>
-                    <li>American Dollar</li>
-                    <li>MDT (Mountian Daylight Time)</li>
-                    <li>+1</li>
-                    <li>+435</li>
-                </ul>
-            </div>
-        </section>
-        <section>
-            <h2>Weather</h2>
-            <img src="images/cloud-icon.svg" alt="icon of a cloud" class="cloud">
-            <div class="title-info">
-                <ul class="title">
-                    <li>Temperature:</li>
-                    <li>Conditions:</li>
-                    <li>Wind:</li>
-                    <li>Wind Chill</li>
-                </ul>
-                <ul class="informaiton">
-                    <li>69°F</li>
-                    <li>Mostly Cloudy</li>
-                    <li>3 mhp</li>
-                    <li>0°F</li>
-                </ul>
-            </div>
-        </section>
+        <div class="everything">
+            <picture class="hero">
+                <source media="(min-width: 500px)" srcset="images/location-hero-large.webp">
+                <img src="images/location-hero-small.webp" alt="Vernal, Utah">
+            </picture>
+            <section id="data">
+                <h2>Data</h2>
+                <div class="title-info">
+                    <ul class="title">
+                        <li>Area:</li>
+                        <li>Population:</li>
+                        <li>Languages:</li>
+                        <li>Currency:</li>
+                        <li>Time Zone:</li>
+                        <li>Calling Code:</li>
+                        <li>Area Code:</li>
+                    </ul>
+                    <ul class="informaiton">
+                        <li>4.62 sq mi</li>
+                        <li>10,698 as of 2024</li>
+                        <li>English, Spanish</li>
+                        <li>American Dollar</li>
+                        <li>MDT</li>
+                        <li>+1</li>
+                        <li>+435</li>
+                    </ul>
+                </div>
+            </section>
+            <section id="weather">
+                <div class="weather-banner">
+                    <h2>Weather</h2>
+                    <img src="images/cloud-icon.svg" alt="icon of a cloud" class="cloud">
+                </div>
+                <div class="title-info">
+                    <ul class="title">
+                        <li>Temperature:</li>
+                        <li>Conditions:</li>
+                        <li>Wind:</li>
+                        <li>Wind Chill:</li>
+                    </ul>
+                    <ul class="informaiton">
+                        <li class="temp">69°F</li>
+                        <li>Mostly Cloudy</li>
+                        <li class="windspeed">3mhp</li>
+                        <li id="wind-chill"></li>
+                    </ul>
+                </div>
+            </section>
+        </div>    
     </main>
     <footer>
-
+        <p>&copy;<span id="currentyear"></span> &#9731; Woodrow J. Snow &#9731; Utah, United States of America</p>
+        <p id="lastModified"></p>
     </footer>
 </body>
 </html>

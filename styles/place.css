@@ -1,7 +1,7 @@
 :root {
     /* colors */
     --primary-color: #FEECB3;
-    --seconday-color: #5F5F23; 
+    --seconday-color: #868632; 
     --accent1: #7E4502;
     --accent2: #DDB87E;
 
@@ -29,13 +29,116 @@ h1 {
     border-bottom: 1rem solid var(--accent1);
 }
 
+h2 {
+    font-family: var(--heading-font);
+    text-align: center;
+    margin: .5rem;
+}
+
+.title-info {
+    font-family: var(--body-font);
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.title-info ul {
+    list-style-type: none;
+    padding: 1rem 0;
+}
+
+.title {
+    align-self: right;
+    text-align: right;
+}
+
+.information {
+    align-self: right;
+}
+
 .hero {
     width: 100%;
+    padding: 0;
+}
+
+.hero img {
+    border-bottom: .5rem solid var(--accent1);
+    width: 100%;
+    height: auto;
 }
 
 .cloud {
-    width: 100%;
+    display: block;
+    width: 25%;
+    margin: 0 auto;
 }
 
-/* do last */
-@media screen and (min-width: 500px){}
+footer {
+    background-color: var(--accent2);
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 2ch;
+    padding: 1rem;
+    font-weight: 600;
+}
+
+@media screen and (min-width: 500px){
+    .hero {
+        width: 100%;
+    }
+
+    .hero img {
+        border: none;
+        width: 100%;
+        height: auto;
+        
+    }
+
+    .everything {
+        position: relative;
+    }
+
+    #data {
+        background-color: var(--primary-color);
+        position: absolute;
+        padding: 1rem;
+        left: 2.5rem;
+        top: 2.5rem;
+    }
+
+    #data h2, #weather h2{
+        background-color: var(--seconday-color);
+        text-align: left;
+        padding: 1rem;
+        width: 95%;
+        margin-left: -2rem;
+    }
+
+    .everything section {
+        opacity: 0.9;
+    }
+
+    #weather {
+        position: absolute;
+        background-color: var(--primary-color);
+        padding: 1rem;
+        right: 2.5rem;
+        bottom: 2.5rem;
+        width: 300px;
+    }
+
+    #weather h2::after {
+        content: " ☁️";
+        padding-left: 3rem;
+    }
+
+    .cloud {
+        width: 20%;
+        display: none;
+    }
+
+    footer {
+        margin: -4px;
+    }
+}
