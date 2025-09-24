@@ -24,9 +24,10 @@
     main {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
     }
 
-    h1,h2 {
+    h1, h2 {
         grid-column: 1/4;
     }
 
@@ -40,5 +41,9 @@
 
     .navigation a:hover {
         color: var(--body-font-color);
+    }
+
+    .temple-card {
+        margin: 0;
     }
 }

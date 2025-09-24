@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* color vars */
+    --line-color: #004643;
+    --body-font-color: #0C1618;
+
+    /* font vars */
+    --heading-font: "Epunda Slab", Rockwell, "Courier New", serif;
+    --body-font: "Raleway", Helvetica, Arial;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    font-size: x-large;
+    /* temp line of code for sanities sake*/
+    justify-content: space-around; 
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+}
+
+#menu {
+    display: block;
+    text-decoration: none;
+    background-color: var(--line-color);
+    color: white;
+}
+.navigation li {
+    display: none;
+}
+
+#menu::before {
+    content: "≡";
+}
+
+.show li {
+    display: block;
+}
+
+#menu.show::before {
+    content: 'X';
+}
+
+header {
+    font-family: var(--heading-font);
+    font-weight: 700;
+    font-size: xxx-large;
+    background-color: var(--line-color);
+    color: white;
+    padding: 1rem;
+}
+
+main {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 90%;
+}
+
+h1 {
+    margin-top: 1rem;
+    font-family: var(--heading-font);
+    font-size: xxx-large;
+}
+
+
+footer{
+    background-color: var(--line-color);
+    color: white;
+    font-family: var(--heading-font);
+    font-size: large;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.temple-card {
+    padding: 1rem;
+    background-color: lightblue;
+    margin: 1rem 0;
+}
+
+.temple-card img {
+    width: 399px;
+    height: auto;
+    padding-top: 1rem;
+}
+
+
+h3 {
+    font-family: var(--heading-font);
+    font-size: x-large;
+}
+
+h4 {
+    font-family: var(--body-font);
+}
