@@ -1,0 +1,4 @@
+Home page
+* will contain info about what poetry is with an image
+* Maybe contain a form to allow users to send in a poem that they have made
+

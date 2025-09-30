@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Pseduo Class Selectors */
+
+:root {
+    /* colors */
+    --head-foot-banner-color: #2B3D41;
+    --heading-text-color: #F9B9F2;
+    --heading-background: #4C5F6B;
+    --section-background: #83A0A0;
+
+    /* fonts */
+    --heading-font: "Quintessential", "Palatino", Garamond, "Times New Roman", serif;
+    --body-font: "EB Garamond", Georgia, "Book Antiqua", serif;
+}
+
+/* Element Selectors */
+
+main {
+    display: block;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--head-foot-banner-color);
+    color: var(--heading-text-color);
+    font-family: var(--heading-font);
+
+}
+
+section {
+    background-color: var(--section-background);
+    padding: 4px;
+}
+
+h2, p {
+    text-align: center;
+    margin: 1rem;
+}
+
+ul {
+    text-align: center;
+}
+
+h2 {
+    font-family: var(--heading-font);
+    background-color: var(--heading-background);
+    color: var(--heading-text-color);
+    padding: 0.5rem;
+}
+
+p, li {
+    font-family: var(--body-font);
+    font-weight: 500;
+}
+
+figcaption {
+    text-align: center;
+    padding: 1rem;
+    font-family: var(--body-font);
+    font-weight: 500;
+}
+
+footer p {
+    background-color: var(--head-foot-banner-color);
+    margin: 0;
+    padding: 1rem;
+    font-size: larger;
+    font-family: var(--heading-font);
+    color: var(--heading-text-color);
+}
+
+/* class selectors */
+
+.logo {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+}
+
+.wireframe {
+    display: block;
+    margin: 0 auto;
+
+}
+
+.fonts li:first-child{
+    font-family: var(--heading-font);
+}
