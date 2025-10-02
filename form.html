@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <meta name="Author" content="Woodrow J. Snow">
+    <meta name="Description" content="Form to allow user to send in a Review of a product">
+    <!-- css links -->
+    <link rel="stylesheet" href="styles/form.css">
+
+    <!-- JS Links -->
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/form.js" defer></script>
+
+    <!-- font links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html">
+            <!-- product select -->
+            <div class="prod-name">Product Name
+                <label for="product-select">
+                    <select id="product-select" name="product-select" required>
+                        <option value="" disabled selected>Select a Product...</option>
+                    </select>
+                </label>
+            </div>
+            <!-- Overall Review -->
+            <p id="rating-heading">Overall Rating</p>
+            <div class="rating">
+                <label><input type="radio" name="rating" value="1" required id="1star"><p>&star;</p></label>
+                <label><input type="radio" name="rating" value="2" required id="2star"><p>&star;&star;</p></label>
+                <label><input type="radio" name="rating" value="3" required id="3star"><p>&star;&star;&star;</p></label>
+                <label><input type="radio" name="rating" value="4" required id="4star"><p>&star;&star;&star;&star;</p></label>
+                <label><input type="radio" name="rating" value="5" required id="5star"><p>&star;&star;&star;&star;&star;</p></label>
+            </div>
+            <!-- date of installation -->
+            <div>Date of Installation
+                <input type="date" id="install-date" name="install-date" required>
+            </div>
+            <!-- useful features -->
+            <div id="features">Useful Features
+                <p id="feat-extra">Check all that apply</p>
+                <label><input type="checkbox" id="durability" name="durability" value="durability">Durability</label>
+                <label><input type="checkbox" id="ease" name="ease" value="ease">Ease of Use</label>
+                <label><input type="checkbox" id="preform" name="preform" value="preform">Performance</label>
+                <label><input type="checkbox" id="design" name="design" value="design">Design</label>
+            </div>
+            <!-- written review -->
+            <div class="user-and-review">Written Review 
+                <p class="optional">(Optional)</p>
+                <textarea id="written" name="written"></textarea>
+            </div>
+            <!-- user name -->
+            <div class="user-and-review">User Name <p class="optional">(Optional)</p>
+                <input type="text" id="user-name" name="user-name">
+            </div>
+            <!-- submit button -->
+            <input type="submit" value="Send Review" id="submit">
+        </form>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> &#9731; Woodrow J. Snow &#9731; Utah, United States of America</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
